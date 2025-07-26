@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.rickshaw-image{
+  width: 100%;
+  height: auto;
+}
+
+.rickshaw-image2{
+  width: 50%;
+  height: auto;
+}
+
+body {
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 580px;
+  padding: 10px;
+}
+
+.screen {
+  display: none;
+  text-align: center;
+  color: white;
+}
+
+.screen.active {
+  display: block;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 1.2em;
+  margin-top: 15px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4040;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 0 10px;
+  color:white;
+}
+
+
+.game-area {
+  background: url('kolkataroad.png') repeat-x;
+  /* background-size: cover; */
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #494040;
+}
+
+
+#rickshaw {
+  position: absolute;
+  bottom: 10px;
+  left: 0%; /* center horizontally */
+  transform: translateX(0%); /* truly center */
+  height: 150px;
+}
+
+footer {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+.footer {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+}
+  
+.githublink {
+	color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+  
+.countdown-text {
+  font-size: 3rem;
+  color: yellow;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}

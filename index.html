@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rickshaw Rush Kolkata 🛺</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="game-container">
+
+    <div id="countdown" class="countdown-text"></div>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+      
+      <img src="logo.png" alt="logo" class="rickshaw-image" />
+      
+      <p style="font-family: 'Courier New';">tap as fast as you can in 10 seconds!</p>
+      
+      <button id="start-btn"><b>START</b></button>
+      
+      <footer style="font-family: 'Courier New'; ">
+        <p> &copy; Rickshaw Rush by 
+          <a href="https://github.com/AnkanGhosh0010" target="_blank" class="githublink" > <i class="fab fa-github" aria-hidden="true" style="margin-right: 5px;"></i> Ankan Ghosh
+          </a>
+        </p>
+      </footer>
+
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+
+      <div class="screen active">
+        <img src="logo.png" alt="logo" class="rickshaw-image2" />
+        <footer style="font-family: 'Courier New'; " class="footer">
+        <p> &copy; Rickshaw Rush by 
+          <a href="https://github.com/AnkanGhosh0010" target="_blank" class="githublink"><i class="fab fa-github" aria-hidden="true" style="margin-right: 5px;"></i>Ankan Ghosh
+          </a>
+        </p>
+        </footer>
+        <p style="font-family: 'Courier New';">tap as fast as you can in 10 seconds!</p>
+      </div>
+
+      <br><br>
+
+      <div class="info-bar">
+        <div>Time Left: <span id="timer">10</span>s</div>
+        <div>Total Taps: <span id="tap-count">0</span></div>
+      </div>
+
+      <div class="game-area" id="tap-area">
+        <img src="rickshaw.gif" id="rickshaw" alt="Rickshaw" />
+        <!-- <div class="road"></div> -->
+      </div>
+
+      
+    </div>
+
+    <div id="end-screen" class="screen">
+        <h2>You traveled <span id="distance"></span> meters!</h2>
+        <p id="comment"></p>
+        <h3>🏆 High Score: <span id="high-score">0</span> meters</h3>
+        <button id="play-again">Play Again</button>
+
+    </div>
+
+  <audio id="bg-music" loop>
+  <source src="kolkata.mp3" type="audio/mp3" />
+  Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
